@@ -75,3 +75,20 @@ int main()
 			}
 		}
 	}
+        int ct[4]={54,68,45,41};
+	for(i=0;i<n;i++)
+	{
+		tarrival[i]=ct[i]-arrival[i];
+		waiting[i]=tarrival[i]-burst1[i];
+		printf("\nCompletion time for process %d : %d \n",i+1,ct[i]);
+		printf("Turn arround time for process %d : %d \n",i+1,tarrival[i]);
+		printf("Waiting time for process %d : %d \n",i+1,waiting[i]);
+		avgT=avgT+tarrival[i];
+		avgW=avgW+waiting[i];
+		
+	}
+	avgT=avgT/n;
+	avgW=avgW/n;
+	printf("\n\nAverage turn around time: %d\n",avgT);
+	printf("Average waiting time: %d\n",avgW);
+	}
