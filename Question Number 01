@@ -14,3 +14,15 @@ int main()
 	int tq2=6;
 	int avgT=0;
 	int avgW=0;
+	printf("\nEnter arival time of processes:\n");
+	for(i=0;i<n;i++)
+	{  printf("For processes %d :",i+1);
+		scanf("%d",&arrival[i]);
+	}
+	printf("\nEnter burst time for processes:\n");
+	for(i=0;i<n;i++)
+	{
+		printf("For processes %d:",i+1);
+		scanf("%d",&burst[i]);
+		burst1[i]=burst[i];	
+	}
