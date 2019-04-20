@@ -75,7 +75,7 @@ int main()
 			}
 		}
 	}
-        int ct[4]={54,68,45,41};
+                                                                                                                                                                                                                                                                                     int ct[4]={54,68,45,41};
 	for(i=0;i<n;i++)
 	{
 		tarrival[i]=ct[i]-arrival[i];
